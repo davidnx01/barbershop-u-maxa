@@ -1,0 +1,312 @@
+<!doctype html><html lang="sk"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Barbershop u Maxa · barber v centre Trenčína — neoficiálny návrh</title>
+<meta name="description" content="Neoficiálny návrh homepage pre Barbershop u Maxa v Trenčíne. Ukážka od webdavid.sk.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='3' fill='%230f3a32'/%3E%3Crect x='5' y='7' width='22' height='18' fill='%23eceee6'/%3E%3Crect x='8' y='12' width='16' height='2' fill='%23b3261e'/%3E%3Crect x='8' y='17' width='10' height='2' fill='%2322398c'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Limelight&family=Libre+Franklin:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --baize:#0f3a32;
+  --baize-d:#0a2a24;
+  --baize-l:#17493f;
+  --card:#eceee6;
+  --card-d:#dfe2d8;
+  --ink:#1b211e;
+  --pen:#22398c;
+  --red:#b3261e;
+  --red-d:#8f1d17;
+  --line:rgba(27,33,30,.26);
+  --gut:clamp(16px,4vw,48px);
+  --disp:'Limelight','Georgia',serif;
+  --body:'Libre Franklin','Helvetica Neue',Arial,sans-serif;
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font:400 16.5px/1.6 var(--body);color:var(--card);background:var(--baize) radial-gradient(ellipse 70% 50% at 50% 18%,var(--baize-l),transparent 70%) no-repeat;overflow-x:clip}
+img,svg{max-width:100%;height:auto;display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid #f2d36b;outline-offset:3px}
+.wrap{max-width:1120px;margin:0 auto;padding-left:var(--gut);padding-right:var(--gut)}
+.num{font-variant-numeric:tabular-nums}
+.cap{font:600 11.5px/1.3 var(--body);letter-spacing:.2em;text-transform:uppercase}
+/* notice */
+.notice{background:#06191a;color:#c9d6d1;font:500 13.5px/1.4 var(--body);padding:9px var(--gut)}
+.notice b{color:#f2d36b;font-weight:600}
+/* header */
+.hd .wrap{display:flex;align-items:center;gap:26px;min-height:72px;border-bottom:1px solid rgba(236,238,230,.22)}
+.brand{text-decoration:none;display:flex;flex-direction:column;line-height:1}
+.brand b{font:400 26px/1 var(--disp);letter-spacing:.01em}
+.brand span{font:600 10.5px/1 var(--body);letter-spacing:.24em;text-transform:uppercase;margin-top:6px;color:#a9bdb6}
+.nav{display:flex;gap:28px;margin-left:auto}
+.nav a{font:600 12.5px/1 var(--body);letter-spacing:.16em;text-transform:uppercase;text-decoration:none;padding:16px 0;background:linear-gradient(var(--card),var(--card)) 0 calc(100% - 10px)/0 1px no-repeat;transition:background-size .2s}
+.nav a:hover{background-size:100% 1px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:50px;padding:0 26px;font:700 13.5px/1 var(--body);letter-spacing:.14em;text-transform:uppercase;text-decoration:none;border:2px solid var(--card);cursor:pointer;transition:background-color .2s,color .2s,border-color .2s}
+.btn-r{background:var(--red);border-color:var(--red);color:#fff}
+.btn-r:hover{background:var(--red-d);border-color:var(--red-d)}
+.btn-l{background:transparent;color:var(--card)}
+.btn-l:hover{background:var(--card);color:var(--baize)}
+.btn-k{background:var(--ink);border-color:var(--ink);color:var(--card)}
+.btn-k:hover{background:#000}
+.hd .btn{min-height:44px;padding:0 20px}
+/* hero: front of the card */
+.hero{padding:clamp(28px,5vw,64px) 0 clamp(38px,6vw,76px)}
+.card{position:relative;background:var(--card);color:var(--ink);border-radius:5px;display:grid;grid-template-columns:1fr 210px;box-shadow:0 1px 0 rgba(255,255,255,.25) inset,0 22px 30px -16px rgba(0,0,0,.55)}
+.front{max-width:1000px;transform:rotate(-.7deg)}
+.card .main{padding:clamp(24px,4vw,44px) clamp(22px,4vw,48px) clamp(26px,4vw,40px)}
+.card .top{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;color:#4a5550;padding-bottom:14px;border-bottom:1px solid var(--line)}
+h1{font:400 clamp(40px,6.4vw,84px)/1 var(--disp);margin:clamp(20px,3vw,34px) 0 clamp(22px,3.4vw,40px);color:var(--ink);letter-spacing:.005em}
+h1 em{font-style:normal;color:var(--red)}
+.fields{display:grid;grid-template-columns:1fr 1fr 1.5fr;gap:clamp(14px,2.4vw,30px)}
+.fld{display:flex;flex-direction:column;gap:2px}
+.fld .cap{color:#5b665f}
+.fld .w{min-height:44px;display:flex;align-items:flex-end;padding-bottom:5px;border-bottom:1.5px solid var(--ink);font:italic 500 clamp(17px,2vw,21px)/1.2 var(--body);color:var(--pen);transform:rotate(-1deg);transform-origin:left bottom;letter-spacing:.01em}
+.card .hint{margin-top:clamp(20px,3vw,30px);font-size:15px;color:#3c4741;max-width:56ch}
+.stub{position:relative;padding:clamp(24px,4vw,44px) 26px 28px 30px;display:flex;flex-direction:column;justify-content:center;gap:4px;background:var(--card-d);border-radius:0 5px 5px 0;border-left:2px dotted rgba(27,33,30,.55)}
+.stub::before,.stub::after{content:"";position:absolute;left:-12px;width:22px;height:22px;border-radius:50%;background:var(--baize)}
+.stub::before{top:-11px}.stub::after{bottom:-11px}
+.stub .cap{color:#5b665f}
+.stub .big{font:400 72px/.95 var(--disp);color:var(--red);margin:6px 0 4px}
+.stars{display:flex;gap:3px}
+.stars svg{width:17px;height:17px;fill:var(--ink)}
+.stub .s{font-size:14px;line-height:1.35;color:#3c4741;margin-top:8px}
+.stub hr{border:0;border-top:1px dashed var(--line);margin:14px 0}
+.stub .m{font:700 15px/1.3 var(--body);color:var(--ink)}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:clamp(28px,4vw,42px)}
+.hero-note{margin-top:14px;font-size:14px;color:#b8cbc4;max-width:60ch}
+/* money block: ústrižok */
+.next{padding:clamp(6px,2vw,24px) 0 clamp(46px,7vw,92px)}
+.tear{position:relative;background:var(--red);color:#fff;margin-left:clamp(0px,7vw,110px);display:grid;grid-template-columns:1.05fr .95fr;border-radius:4px;box-shadow:0 22px 30px -18px rgba(0,0,0,.6)}
+.tear::before,.tear::after{content:"";position:absolute;left:-1px;top:0;bottom:0;width:13px;background:radial-gradient(circle at 0 50%,var(--baize) 8px,transparent 8.5px) 0 0/13px 28px repeat-y}
+.tear::after{left:auto;right:-1px;transform:scaleX(-1)}
+.tear .a{padding:clamp(34px,5vw,64px) clamp(30px,4vw,56px) clamp(34px,5vw,64px) clamp(38px,5vw,62px);border-right:2px dotted rgba(255,255,255,.6)}
+.tear .cap{color:#ffd9d3}
+h2{font:400 clamp(34px,4.8vw,60px)/1.05 var(--disp)}
+.tear h2{margin:14px 0 18px}
+.tear .a p{max-width:38ch;color:#ffe7e3}
+.tear .a .pr{margin-top:18px;font:600 13px/1.4 var(--body);letter-spacing:.06em;color:#fff;padding-top:14px;border-top:1px solid rgba(255,255,255,.4);max-width:38ch}
+.tear .b{padding:clamp(30px,4vw,56px) clamp(32px,4vw,56px) clamp(30px,4vw,56px) clamp(30px,4vw,48px);display:flex;flex-direction:column;justify-content:center;gap:clamp(22px,3vw,34px)}
+.act{display:block;text-decoration:none;color:#fff;padding-bottom:16px;border-bottom:1px solid rgba(255,255,255,.45);transition:border-color .2s}
+.act:hover{border-color:#fff}
+.act .cap{display:block;margin-bottom:6px}
+.act strong{display:block;font:800 clamp(25px,3.2vw,38px)/1.1 var(--body);letter-spacing:-.01em}
+.act:hover strong{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:6px}
+.act small{display:block;margin-top:6px;font-size:13.5px;color:#ffd9d3}
+/* back of the card: services */
+.back{padding:clamp(6px,2vw,24px) 0 clamp(46px,7vw,92px)}
+.ruled{max-width:900px;transform:rotate(.45deg);grid-template-columns:270px 1fr}
+.ruled .side{padding:clamp(26px,4vw,44px) 26px clamp(26px,4vw,44px) clamp(24px,4vw,40px);border-right:2px solid rgba(179,38,30,.6)}
+.ruled .cap{color:#5b665f}
+.ruled h2{font-size:clamp(30px,3.2vw,40px);margin-top:10px;color:var(--ink);white-space:nowrap}
+.ruled .ln{padding:clamp(26px,4vw,44px) clamp(22px,4vw,44px) clamp(24px,4vw,36px) clamp(22px,3vw,34px)}
+.ln ul{list-style:none;padding:0}
+.ln li{display:grid;grid-template-columns:auto 1fr auto;align-items:end;gap:10px;min-height:92px;padding-bottom:12px;border-bottom:1px solid rgba(34,57,140,.3)}
+.ln li h3{font:700 clamp(17px,2vw,21px)/1.25 var(--body);color:var(--ink);max-width:24ch}
+.ln li h3 span{display:block;font:italic 500 15.5px/1.3 var(--body);color:var(--pen);margin-top:3px}
+.ln li i{border-bottom:2px dotted rgba(27,33,30,.55);height:1px;margin-bottom:8px}
+.ln li b{font:italic 500 17px/1.2 var(--body);color:var(--pen);text-align:right;padding-bottom:2px;transform:rotate(-1.2deg);white-space:nowrap}
+.ln p{margin-top:14px;font-size:14.5px;color:#3c4741;max-width:54ch;background:var(--card);display:inline}
+.ln .prf{display:block;margin-top:22px;padding-top:8px}
+/* voice */
+.voice{padding:0 0 clamp(46px,7vw,92px)}
+.voice .wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,6vw,90px);align-items:center}
+.vtxt .cap{color:#a9bdb6}
+.vtxt h2{margin:14px 0 16px}
+.vtxt p{color:#c6d6d0;max-width:40ch}
+.note{position:relative;justify-self:end;width:min(100%,430px);background:var(--card);color:var(--ink);padding:38px 34px 30px 38px;transform:rotate(1.1deg);border-radius:3px;box-shadow:0 18px 26px -16px rgba(0,0,0,.6)}
+.note::before{content:"";position:absolute;left:-10px;top:50%;width:20px;height:20px;border-radius:50%;background:var(--baize);margin-top:-10px}
+.note q{quotes:none;display:block;font:italic 500 clamp(24px,3vw,32px)/1.25 var(--body);color:var(--pen)}
+.note q::before{content:"„"}.note q::after{content:"“"}
+.note .cap{display:block;margin-top:20px;padding-top:12px;border-top:1px dashed var(--line);color:#5b665f}
+/* ratings row */
+.rt{padding:0 0 clamp(46px,7vw,92px)}
+.rt .ttl{display:flex;align-items:baseline;gap:18px;margin-bottom:22px}
+.rt .ttl .cap{color:#a9bdb6}
+.rt .ttl::after{content:"";flex:1;border-top:2px dotted rgba(236,238,230,.5)}
+.rts{display:grid;grid-template-columns:repeat(3,1fr);gap:0;padding:0}
+.rts li{list-style:none;position:relative;background:var(--card);color:var(--ink);padding:26px 26px 24px 30px;margin-right:16px}
+.rts li:last-child{margin-right:0}
+.rts li{border-right:0;background-image:radial-gradient(circle at 100% 50%,var(--baize) 7px,transparent 7.5px);background-size:14px 26px;background-repeat:repeat-y;background-position:right top;background-color:var(--card);padding-right:30px}
+.rts li:last-child{background-image:none}
+.rts .cap{color:#5b665f}
+.rts strong{display:block;font:400 54px/1 var(--disp);color:var(--red);margin:10px 0 8px}
+.rts p{font-size:14.5px;line-height:1.4;color:#3c4741}
+.rts p b{color:var(--ink)}
+.rt .src{margin-top:16px;font-size:13px;color:#a9bdb6}
+/* contact */
+.ct{padding:0 0 clamp(54px,8vw,104px)}
+.cbk{max-width:1000px;margin-left:auto;grid-template-columns:1fr;transform:rotate(-.35deg)}
+.cbk .hdc{padding:clamp(26px,4vw,44px) clamp(22px,4vw,48px) 22px;border-bottom:1px solid var(--line);display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:20px}
+.cbk .hdc .cap{color:#5b665f;display:block;margin-bottom:10px}
+.cbk .hdc h2{font-size:clamp(30px,4.2vw,52px);color:var(--ink)}
+.cbk dl{display:grid;grid-template-columns:1fr 1fr;padding:6px clamp(22px,4vw,48px) clamp(22px,3vw,34px)}
+.cbk dl>div{padding:16px 0;border-bottom:1px solid var(--line);margin-right:clamp(0px,3vw,36px)}
+.cbk dt{font:600 11.5px/1.3 var(--body);letter-spacing:.2em;text-transform:uppercase;color:#5b665f;margin-bottom:5px}
+.cbk dd{font:600 18px/1.35 var(--body);word-break:break-word}
+.cbk dd em{display:block;font:italic 500 14px/1.4 var(--body);color:var(--pen);margin-top:2px}
+.cbk dd a{text-decoration:none;background:linear-gradient(var(--red),var(--red)) 0 100%/100% 1px no-repeat;padding-bottom:1px;transition:background-size .2s}
+.cbk dd a:hover{background-size:100% 3px}
+/* footer */
+.ft{background:var(--baize-d);color:#9db4ad;font-size:14px;padding:26px 0;border-top:1px solid rgba(236,238,230,.15)}
+.ft .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between}
+.ft b{color:var(--card);font-weight:600}
+.mbar{display:none}
+@media (max-width:900px){
+  .nav{display:none}
+  .hd .btn{margin-left:auto}
+  .tear{grid-template-columns:1fr;margin-left:0}
+  .tear .a{border-right:0;border-bottom:2px dotted rgba(255,255,255,.6)}
+  .voice .wrap{grid-template-columns:1fr}
+  .note{justify-self:start}
+  .ruled{grid-template-columns:1fr}
+  .ruled .side{border-right:0;border-bottom:2px solid rgba(179,38,30,.6);padding-bottom:20px}
+  .cbk dl{grid-template-columns:1fr}
+  .cbk dl>div{margin-right:0}
+}
+@media (max-width:700px){
+  body{padding-bottom:calc(70px + env(safe-area-inset-bottom))}
+  .brand b{font-size:22px}
+  .card{grid-template-columns:1fr}
+  .stub{border-left:0;border-top:2px dotted rgba(27,33,30,.55);border-radius:0 0 5px 5px;flex-direction:row;flex-wrap:wrap;align-items:center;gap:6px 22px;padding:26px 24px}
+  .stub::before,.stub::after{top:-11px;bottom:auto;left:-11px}
+  .stub::after{left:auto;right:-11px}
+  .stub .big{font-size:56px;margin:0}
+  .stub hr{display:none}
+  .stub .s{margin-top:0}
+  .fields{grid-template-columns:1fr 1fr}
+  .fields .fld:last-child{grid-column:1/-1}
+  .rts{grid-template-columns:1fr;gap:16px}
+  .rts li{margin-right:0}
+  .rts li{background-image:none}
+  .ln li{grid-template-columns:1fr;gap:4px;min-height:0;padding:14px 0 10px}
+  .ln li i{display:none}
+  .ln li b{text-align:left}
+  .ln li h3{max-width:none}
+  .front{transform:rotate(-.4deg)}
+  .mbar{display:grid;grid-template-columns:1fr 1fr;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:20;background:#06191a;border-top:1px solid rgba(236,238,230,.3);padding:8px 12px calc(8px + env(safe-area-inset-bottom))}
+  .mbar .btn{min-height:48px;padding:0 8px;font-size:13px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><symbol id="st" viewBox="0 0 24 24"><polygon points="12,1.8 14.9,8.5 22.2,9.2 16.7,14 18.4,21.2 12,17.4 5.6,21.2 7.3,14 1.8,9.2 9.1,8.5"/></symbol></defs></svg>
+
+<div class="notice"><b>Neoficiálny návrh</b> — nie je to oficiálny web podniku · ukážka od webdavid.sk, objednávky ani rezervácie tu nefungujú</div>
+
+<header class="hd"><div class="wrap">
+  <a class="brand" href="#top" aria-label="Barbershop u Maxa, hore"><b>U Maxa</b><span>Barbershop · Trenčín</span></a>
+  <nav class="nav" aria-label="Hlavná navigácia"><a href="#termin">Termín</a><a href="#sluzby">Čo robia</a><a href="#hodnotenie">Hodnotenie</a><a href="#kontakt">Kontakt</a></nav>
+  <a class="btn btn-r" href="tel:+421949505606">Zavolať</a>
+</div></header>
+
+<main id="top">
+<section class="hero"><div class="wrap">
+  <article class="card front">
+    <div class="main">
+      <div class="top cap"><span>Termínová kartička</span><span>Legionárska 7049 · Trenčín</span></div>
+      <h1>Barbershop<br><em>u Maxa</em></h1>
+      <div class="fields">
+        <div class="fld"><span class="cap">Dátum</span><span class="w">podľa dohody</span></div>
+        <div class="fld"><span class="cap">Čas</span><span class="w">na objednanie</span></div>
+        <div class="fld"><span class="cap">Služba</span><span class="w">pánsky strih · úprava brady</span></div>
+      </div>
+      <p class="hint">Termín si dohodnete telefonicky, cez Instagram alebo Facebook.</p>
+    </div>
+    <aside class="stub" aria-label="Hodnotenie">
+      <div>
+        <span class="cap">Google</span>
+        <div class="big num">5,0</div>
+        <div class="stars" aria-hidden="true"><svg><use href="#st"/></svg><svg><use href="#st"/></svg><svg><use href="#st"/></svg><svg><use href="#st"/></svg><svg><use href="#st"/></svg></div>
+      </div>
+      <div>
+        <p class="s num"><b class="m">80 hodnotení</b></p>
+        <hr>
+        <p class="s">Zlatá medaila<br><b class="m num">Orly 2024–2026</b></p>
+      </div>
+    </aside>
+  </article>
+  <div class="hero-cta">
+    <a class="btn btn-r" href="tel:+421949505606">Zavolať +421 949 505 606</a>
+    <a class="btn btn-l" href="https://instagram.com/barbershop_u_maxa" target="_blank" rel="noopener">Instagram</a>
+  </div>
+  <p class="hero-note">Hodiny zatiaľ nemáme overené, preto je kartička vyplnená „na objednanie“.</p>
+</div></section>
+
+<section class="next" id="termin"><div class="wrap">
+  <div class="tear">
+    <div class="a">
+      <span class="cap">Ďalší termín</span>
+      <h2>Ďalší termín?</h2>
+      <p>Pánske strihy strojčekom aj nožnicami, úprava brady. Stačí sa ozvať, termín si dohodnete.</p>
+      <p class="pr">Cenník povieme pri objednaní.</p>
+    </div>
+    <div class="b">
+      <a class="act" href="tel:+421949505606"><span class="cap">Zavolať</span><strong class="num">+421 949 505 606</strong></a>
+      <a class="act" href="https://instagram.com/barbershop_u_maxa" target="_blank" rel="noopener"><span class="cap">Napísať na Instagram</span><strong>@barbershop_u_maxa</strong><small>Rezervácie prijímajú aj cez Facebook.</small></a>
+    </div>
+  </div>
+</div></section>
+
+<section class="back" id="sluzby"><div class="wrap">
+  <article class="card ruled">
+    <div class="side"><span class="cap">Na rube kartičky</span><h2>Čo robia</h2></div>
+    <div class="ln">
+      <ul>
+        <li><h3>Pánsky strih<span>strojčekom aj nožnicami</span></h3><i></i><b>cena pri objednaní</b></li>
+        <li><h3>Úprava brady</h3><i></i><b>cena pri objednaní</b></li>
+      </ul>
+      <p class="prf">Podľa profilu na Orly Kaderníctva ide o detailnú starostlivosť o imidž mužov s individuálnym prístupom.</p>
+    </div>
+  </article>
+</div></section>
+
+<section class="voice"><div class="wrap">
+  <div class="vtxt">
+    <span class="cap">Vlastnými slovami</span>
+    <h2>Profesionálna práca a relax</h2>
+    <p>Takto sa predstavujú na Facebooku: miesto, kde sa spája profesionálna práca s príjemným relaxom.</p>
+  </div>
+  <figure class="note">
+    <q>Ďakujem, nezastavujeme sa!</q>
+    <span class="cap">Facebook príspevok, 14. 9. 2025</span>
+  </figure>
+</div></section>
+
+<section class="rt" id="hodnotenie"><div class="wrap">
+  <div class="ttl"><span class="cap">Čo o nich hovoria ľudia</span></div>
+  <ul class="rts">
+    <li><span class="cap">Google</span><strong class="num">5,0</strong><p><b>80 hodnotení</b> na Google Maps</p></li>
+    <li><span class="cap">Orly Kaderníctva</span><strong class="num">5,0</strong><p><b>94 hodnotení</b>, zlatá medaila a laureát 2024, 2025, 2026</p></li>
+    <li><span class="cap">Facebook</span><strong class="num">100 %</strong><p>odporúča, <b>14 hodnotení</b></p></li>
+  </ul>
+  <p class="src">Zdroje: Google, Orly Kaderníctva, Facebook (1. 10. 2026). Texty recenzií tu necitujeme.</p>
+</div></section>
+
+<section class="ct" id="kontakt"><div class="wrap">
+  <article class="card cbk">
+    <div class="hdc">
+      <div><span class="cap">Kontakt</span><h2>Legionárska 7049</h2></div>
+      <a class="btn btn-k" href="https://www.google.com/maps/search/Barbershop+u+Maxa+Legion%C3%A1rska+7049+Tren%C4%8D%C3%ADn" target="_blank" rel="noopener">Navigovať</a>
+    </div>
+    <dl>
+      <div><dt>Adresa</dt><dd>Legionárska 7049, 911 01 Trenčín<em>v centre mesta</em></dd></div>
+      <div><dt>Telefón</dt><dd class="num"><a href="tel:+421949505606">+421 949 505 606</a></dd></div>
+      <div><dt>E-mail</dt><dd><a href="mailto:Barbershopumaxa@gmail.com">Barbershopumaxa@gmail.com</a></dd></div>
+      <div><dt>Hodiny</dt><dd>Na objednanie<em>otváracie hodiny nie sú zverejnené, overiť</em></dd></div>
+      <div><dt>Instagram</dt><dd><a href="https://instagram.com/barbershop_u_maxa" target="_blank" rel="noopener">@barbershop_u_maxa</a></dd></div>
+      <div><dt>Facebook</dt><dd><a href="https://www.facebook.com/p/Barbershop-u-Maxa-100087989435558/" target="_blank" rel="noopener">Barbershop u Maxa</a><em>rezervácie cez Facebook</em></dd></div>
+    </dl>
+  </article>
+</div></section>
+</main>
+
+<footer class="ft"><div class="wrap">
+  <span><b>Neoficiálny návrh webu</b> · webdavid.sk · 2026</span>
+  <span>Barbershop u Maxa · Legionárska 7049, Trenčín</span>
+</div></footer>
+
+<nav class="mbar" aria-label="Rýchle akcie">
+  <a class="btn btn-r" href="tel:+421949505606">Zavolať</a>
+  <a class="btn btn-l" href="https://instagram.com/barbershop_u_maxa" target="_blank" rel="noopener">Instagram</a>
+</nav>
+</html>
